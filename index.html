@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حديقة بلدية بني صاف</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f2f2f2; }
+    header, footer { background-color: #00695c; color: white; text-align: center; padding: 1em; }
+    nav { background-color: #004d40; color: white; display: flex; justify-content: center; gap: 1em; padding: 1em; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 2em; max-width: 900px; margin: auto; background: white; margin-top: 1em; border-radius: 8px; }
+    h2 { color: #004d40; }
+    form input, form textarea, form select, form button {
+      display: block; width: 100%; margin-bottom: 1em; padding: 0.5em; border-radius: 5px; border: 1px solid #ccc;
+    }
+    .gallery img { width: 150px; height: auto; margin: 10px; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>حديقة بلدية بني صاف</h1>
+    <p>فضاء بيئي، ترفيهي وسياحي للجميع</p>
+  </header>
+  <nav>
+    <a href="#about">عن المشروع</a>
+    <a href="#gallery">معرض الصور</a>
+    <a href="#spaces">فضاءات الحديقة</a>
+    <a href="#tour">جولة افتراضية</a>
+    <a href="#visitplan">خطة زيارتك</a>
+    <a href="#plant">نبتة الأسبوع</a>
+    <a href="#market">منتوجات محلية</a>
+    <a href="#reservation">حجز الشاليهات</a>
+    <a href="#feedback">رأيك يهمنا</a>
+  </nav>
+
+  <section id="about">
+    <h2>عن المشروع</h2>
+    <p>تهدف الحديقة إلى توفير فضاء أخضر متنوع يخدم كل فئات المجتمع: شباب، عائلات وأطفال، مع احترام التوازن الإيكولوجي وتعزيز السياحة المحلية.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>معرض الصور</h2>
+    <div class="gallery">
+      <a href="images/plan_general.jpg" target="_blank"><img src="images/plan_general.jpg" alt="مخطط عام"></a>
+      <a href="images/shaleh.jpg" target="_blank"><img src="images/shaleh.jpg" alt="شاليهات"></a>
+      <a href="images/fountain.jpg" target="_blank"><img src="images/fountain.jpg" alt="نافورة"></a>
+      <a href="images/children_area.jpg" target="_blank"><img src="images/children_area.jpg" alt="فضاء الأطفال"></a>
+      <a href="images/pathway.jpg" target="_blank"><img src="images/pathway.jpg" alt="المسالك"></a>
+      <a href="images/kiosk.jpg" target="_blank"><img src="images/kiosk.jpg" alt="أكشاك"></a>
+    </div>
+  </section>
+
+  <section id="spaces">
+    <h2>فضاءات الحديقة</h2>
+    <ul>
+      <li>فضاء الأطفال: ألعاب، أمان، رمل، تظليل</li>
+      <li>فضاء العائلات: مناطق جلوس، شواء، هدوء</li>
+      <li>فضاء الشباب: رياضة، تصوير، استراحة</li>
+      <li>نافورة، شلال صخري، مسالك وممرات طبيعية</li>
+      <li>أكشاك بيع، إنارة، مراحيض ومصلى</li>
+    </ul>
+  </section>
+
+  <section id="tour">
+    <h2>جولة افتراضية</h2>
+    <p>اكتشف الحديقة من خلال الصور التفاعلية التي تمنحك تجربة مميزة وكأنك تتجول داخلها. سيتم إضافة الجولة قريبًا.</p>
+  </section>
+
+  <section id="visitplan">
+    <h2>خطة زيارتك</h2>
+    <p>ابدأ يومك بجولة في فضاء العائلات، استرح في منطقة الشباب، ثم اسمح لأطفالك باللعب في فضائهم المخصص. لا تنس زيارة الشلال والاستمتاع بوجبة خفيفة في أحد الأكشاك.</p>
+  </section>
+
+  <section id="plant">
+    <h2>نبتة الأسبوع</h2>
+    <p>🌿 نبات اللافندر: نبات عطري يُستخدم للزينة ويجذب النحل. سهل الزراعة ومفيد في الحدائق البيئية.</p>
+  </section>
+
+  <section id="market">
+    <h2>ركن المنتوجات المحلية</h2>
+    <p>تعرف على منتجات الحرفيين المحليين من خلال الأكشاك داخل الحديقة. يتم عرض العسل، الحلويات، والمصنوعات اليدوية بشكل دوري.</p>
+  </section>
+
+  <section id="reservation">
+    <h2>حجز الشاليهات</h2>
+    <form>
+      <input type="text" placeholder="الاسم الكامل" required>
+      <input type="tel" placeholder="رقم الهاتف" required>
+      <select required>
+        <option>نوع الشاليه</option>
+        <option>عائلي</option>
+        <option>شبابي</option>
+      </select>
+      <input type="date" required>
+      <input type="number" placeholder="عدد الأشخاص" required>
+      <button type="submit">إرسال الحجز</button>
+    </form>
+  </section>
+
+  <section id="feedback">
+    <h2>شاركنا رأيك</h2>
+    <form>
+      <input type="text" placeholder="الاسم (اختياري)">
+      <select>
+        <option>زائر</option>
+        <option>ساكن</option>
+        <option>سائح</option>
+      </select>
+      <select>
+        <option>التقييم العام</option>
+        <option>⭐</option>
+        <option>⭐⭐</option>
+        <option>⭐⭐⭐</option>
+        <option>⭐⭐⭐⭐</option>
+        <option>⭐⭐⭐⭐⭐</option>
+      </select>
+      <textarea placeholder="ملاحظاتك أو اقتراحك"></textarea>
+      <button type="submit">أرسل رأيك</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 بلدية بني صاف – كل الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>
